@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f4f4f9; /* Background color */
     color: #333;
     text-align: center;
     padding: 30px;
@@ -16,7 +16,7 @@ body {
 h1 {
     color: #2c3e50;
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-bottom: 60px; /* Keeps a nice gap between the h1 and the rest of the page */
 }
 
 p {
@@ -66,7 +66,7 @@ button:hover {
 }
 
 #copy-btn:hover {
-    background-color: #27ae60;
+    background-color: #27ae60; /* Slightly darker green on hover */
 }
 
 #download-btn {
@@ -80,10 +80,11 @@ button:hover {
     transition: background-color 0.3s ease;
     margin-top: 20px;
     margin-left: 10px; /* Adds a little space between the buttons */
+    margin-bottom: 60px;
 }
 
 #download-btn:hover {
-    background-color: #d35400; /* Darker orange on hover */
+    background-color: #d35400; /* Slightly darker orange on hover */
 }
 
 select {
@@ -115,7 +116,7 @@ a:hover {
 }
 
 footer {
-    margin-top: 30px;
+    margin-top: 100px; /* Keep a visual gap between the footer and rest of the page */
     font-size: 1em;
     color: #777;
 }
