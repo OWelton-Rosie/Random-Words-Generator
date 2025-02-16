@@ -1,0 +1,121 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#output-field {
+    width: 70%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    text-align: center;
+    transition: border-color 0.3s ease;
+}
+
+#output-field:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+#copy-btn {
+    background-color: #2ecc71;
+    margin-left: 10px;
+    padding: 10px 20px;
+}
+
+#copy-btn:hover {
+    background-color: #27ae60;
+}
+
+#download-btn {
+    background-color: #e67e22;
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-left: 10px; /* Adds a little space between the buttons */
+}
+
+#download-btn:hover {
+    background-color: #d35400; /* Darker orange on hover */
+}
+
+select {
+    font-size: 1em;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100px;
+}
+
+input[type="number"] {
+    font-size: 1em;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 1em;
+    color: #777;
+}

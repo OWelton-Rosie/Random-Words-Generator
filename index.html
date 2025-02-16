@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Generate random words to share, save or copy.">
+        <link rel="stylesheet" href="style.css">
+        <title>Random Words Generator</title>
+    </head>
+
+    <body>
+        <h1>Random Words Generator</h1>
+
+        <label for="word-count">Choose number of words: </label>
+        <select id="word-count">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="custom">Custom</option>
+        </select>
+
+        <br>
+        <div id="custom-input-container" style="display: none;">
+            <label for="custom-word-count">Enter custom number of words: </label>
+            <input type="number" id="custom-word-count" min="1" placeholder="e.g. 30">
+        </div>
+
+        <br>
+        <label for="comma-separated">Separate words with commas:</label>
+        <input type="checkbox" id="comma-separated">
+
+
+        <br>
+        <button id="generate-btn">Generate!</button>
+        <br>
+        <input type="text" id="output-field" readonly>
+        <button id="copy-btn" onclick="copyToClipboard()">Copy to clipboard</button>
+        <br>
+
+        <!-- Format selection for download -->
+        <label for="file-format">Choose download format:</label>
+        <select id="file-format">
+            <option value="txt">Text (.txt)</option>
+            <option value="csv">CSV (.csv)</option>
+            <option value="json">JSON (.json)</option>
+        </select>
+
+        <!-- Add a button to download the output -->
+        <button id="download-btn" onclick="downloadOutput()">Download</button>
+    
+
+        <!-- JS scripts (DON'T CHANGE THE ORDER!) -->
+        <!-- Words & word generation JS files -->
+        <script src="./js/words.js"></script>  <!-- Load the wordlist first -->
+        <script src="./js/word-generation.js"></script>  <!-- Then load word-generation.js -->
+
+        <!-- UI and clipboard JS files -->
+        <script src="./js/ui.js"></script>
+        <script src="./js/clipboard.js"></script>
+
+        <!-- Download JS File -->
+        <script src="./js/download.js"></script>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <footer>
+            <p>Written by <a href="https://owelton-rosie.pages.dev/" target="_blank">Oscar Welton-Rosie</a>.
+                <a href="https://github.com/OWelton-Rosie/random-words-generator" target="_blank">GitHub</a></p>
+        </footer>
+    </body>
+</html>
