@@ -37,6 +37,9 @@
         <br>
         <input type="text" id="output-field" readonly>
         <button id="copy-btn" onclick="copyToClipboard()">Copy to clipboard</button>
+
+        <br>
+        <br> <!-- Visual gap between the output field and download button -->
         <br>
 
         <!-- Format selection for download -->
@@ -48,31 +51,29 @@
         </select>
 
         <!-- Add a button to download the output -->
-        <button id="download-btn" onclick="downloadOutput()">Download</button>
-    
+        <button id="download-btn" onclick="downloadOutput()">Download!</button>
 
-        <!-- JS scripts (DON'T CHANGE THE ORDER!) -->
-        <!-- Words & word generation JS files -->
-        <script src="./js/words.js"></script>  <!-- Load the wordlist first -->
-        <script src="./js/word-generation.js"></script>  <!-- Then load word-generation.js -->
-
-        <!-- UI and clipboard JS files -->
-        <script src="./js/ui.js"></script>
-        <script src="./js/clipboard.js"></script>
-
-        <!-- Download JS File -->
-        <script src="./js/download.js"></script>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
 
         <footer>
             <p>Written by <a href="https://owelton-rosie.pages.dev/" target="_blank">Oscar Welton-Rosie</a>.
                 <a href="https://github.com/OWelton-Rosie/random-words-generator" target="_blank">GitHub</a></p>
         </footer>
+
+
+
+
+
+                <!-- JS scripts (DON'T CHANGE THE ORDER!) -->
+
+        <!-- Words & word generation JS files -->
+        <script src="./js/words.js"></script>  <!-- Load the wordlist first -->
+        <script src="./js/word-generation.js"></script>  <!-- Then load word-generation.js -->
+
+        <!-- UI and clipboard JS files -->
+        <script src="./js/ui.js"></script> <!-- User interface JS file -->
+        <script src="./js/clipboard.js"></script> <!-- Copy to clipboard JS file -->
+
+        <!-- Download JS File -->
+        <script src="./js/download.js"></script> <!-- JS file to enable the user to download the output in a variety of formats -->
     </body>
 </html>
