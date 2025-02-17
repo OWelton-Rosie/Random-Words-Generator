@@ -7,24 +7,27 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9; /* Background color */
+    background-color: #f4f4f9; /* Light background for readability */
     color: #333;
     text-align: center;
     padding: 30px;
 }
 
+/* Headings */
 h1 {
     color: #2c3e50;
     font-size: 2.5em;
-    margin-bottom: 60px; /* Keeps a nice gap between the h1 and the rest of the page */
+    margin-bottom: 60px; /* Space between heading and content */
 }
 
+/* Paragraphs */
 p {
     font-size: 1.1em;
     margin-bottom: 30px;
     color: #555;
 }
 
+/* Buttons */
 button {
     background-color: #3498db;
     color: white;
@@ -41,6 +44,19 @@ button:hover {
     background-color: #2980b9;
 }
 
+/* Focus Styles for Accessibility */
+button:focus-visible, select:focus-visible, input:focus-visible {
+    outline: 3px solid #3498db; /* High-contrast focus outline */
+    outline-offset: 2px;
+}
+
+/* Generate Button - Now Above Output Field */
+#generate-btn {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Output Field */
 #output-field {
     width: 70%;
     padding: 10px;
@@ -52,6 +68,8 @@ button:hover {
     color: #333;
     text-align: center;
     transition: border-color 0.3s ease;
+    display: block;
+    margin: 20px auto; /* Centers the field */
 }
 
 #output-field:focus {
@@ -59,6 +77,7 @@ button:hover {
     border-color: #3498db;
 }
 
+/* Copy Button */
 #copy-btn {
     background-color: #2ecc71;
     margin-left: 10px;
@@ -66,9 +85,10 @@ button:hover {
 }
 
 #copy-btn:hover {
-    background-color: #27ae60; /* Slightly darker green on hover */
+    background-color: #27ae60;
 }
 
+/* Download Button */
 #download-btn {
     background-color: #e67e22;
     color: white;
@@ -79,22 +99,24 @@ button:hover {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 20px;
-    margin-left: 10px; /* Adds a little space between the buttons */
+    margin-left: 10px;
 }
 
 #download-btn:hover {
-    background-color: #d35400; /* Slightly darker orange on hover */
+    background-color: #d35400;
 }
 
+/* Select Dropdown */
 select {
     font-size: 1em;
     padding: 5px;
     margin-top: 20px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    width: 100px;
+    width: 120px;
 }
 
+/* Number Input */
 input[type="number"] {
     font-size: 1em;
     padding: 5px;
@@ -104,6 +126,29 @@ input[type="number"] {
     width: 100px;
 }
 
+/* Checkbox and Label Styling */
+label {
+    font-size: 1.1em;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Larger Click Area for Checkbox */
+label[for="comma-separated"] {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Links */
 a {
     color: #3498db;
     text-decoration: none;
@@ -114,8 +159,9 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Footer */
 footer {
-    margin-top: 100px; /* Keep a visual gap between the footer and rest of the page */
+    margin-top: 100px;
     font-size: 1em;
     color: #777;
 }
