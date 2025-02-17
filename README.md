@@ -1,7 +1,9 @@
 ## Running the project locally
 To clone this repo, you'll need to go into your terminal and enter the following command:
 
-```git clone https://github.com/OWelton-Rosie/random-words-generator```
+```
+git clone https://github.com/OWelton-Rosie/random-words-generator
+```
 
 Once you've pressed enter, the repo will clone and run locally. 
 
