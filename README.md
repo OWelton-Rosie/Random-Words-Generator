@@ -7,6 +7,6 @@
   └── style.css <b>Project CSS file</b>
   
   <b>Client side pages:</b>
-└── index.html <b>home page</b>
+  └── index.html <b>home page</b>
 
 </pre>
