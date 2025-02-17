@@ -9,4 +9,9 @@
 <b>Client side pages:</b>
 └── index.html <b>Project home page</b>
 
+ <hr>
+
+<b>GitHub:</b>
+└── README.md <b>Project GitHub README</b>
+
 </pre>
