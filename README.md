@@ -1,7 +1,7 @@
 ## Running the project locally
 To clone this repo, you'll need to go into your terminal [https://www.ionos.com/help/email/troubleshooting-mail-basicmail-business/access-the-command-prompt-or-terminal/](click here to view a guide on opening the terminal) and run the following command:
 
-`git clone https://github.com/OWelton-Rosie/random-words-generator`
+```git clone https://github.com/OWelton-Rosie/random-words-generator```
 
 ## Project Structure
 <pre>
