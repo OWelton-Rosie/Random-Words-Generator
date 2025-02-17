@@ -15,57 +15,32 @@ const words = [
     "poppy seed", "balsamic", "ketchup", "mustard", "mayonnaise", "sweet potato", "avocado toast", "mango salsa", "gouda", "brie",
 
     // Animals
-    "tiger", "lion", "cheetah", "panther", "wolf", "falcon", "eagle", "serpent", "griffin", "phoenix",
-    "dragon", "unicorn", "pegasus", "kraken", "hydra", "chimera", "basilisk", "leviathan", "minotaur", "centaur",
-    "dolphin", "whale", "octopus", "jaguar", "lynx", "hawk", "raven", "fox", "bear", "otter",
-    "gazelle", "mongoose", "coyote", "badger", "meerkat", "koala", "kangaroo", "armadillo", "platypus", "stingray",
-    "penguin", "peacock", "zebra", "polar bear", "chameleon", "hummingbird", "firefly", "tarantula", "salamander", "bobcat",
-    "moose", "buffalo", "ferret", "hyena", "lemur", "mammoth", "narwhal", "owl", "parrot", "quail",
-    "roadrunner", "squirrel", "tortoise", "vulture", "wolverine", "yak", "anteater", "beetle", "caterpillar", "dung beetle",
-    "wombat", "platypus", "toucan", "wallaby", "gecko", "hornet", "kangaroo rat", "chinchilla", "armadillo", "pelican",
-    "crab", "lobster", "shrimp", "snail", "mole", "rabbit", "hare", "bat", "raccoon", "otter",
-
+    "elephant", "giraffe", "rhinoceros", "hippopotamus", "crocodile", "alligator", "newt", "salamander", "scorpion", "tarantula",
+    "stingray", "jellyfish", "seahorse", "parakeet", "cockatoo", "viper", "anaconda", "iguana", "komodo dragon", "piranha",
+    "walrus", "sea lion", "caribou", "reindeer", "yak", "emu", "cassowary", "beaver", "weasel", "stoat",
+    "lynx", "ocelot", "snow leopard", "mandrill", "orangutan", "chimpanzee", "gorilla", "pangolin", "sloth", "tapir",
+    "wolfhound", "mastodon", "megalodon", "firefly", "honeybee", "manta ray", "puffin", "civet", "axolotl", "narwhal",
+    
     // Nature & Space
-    "ocean", "river", "waterfall", "mountain", "valley", "glacier", "canyon", "galaxy", "nebula", "comet",
-    "quasar", "blackhole", "supernova", "meteor", "satellite", "asteroid", "cosmos", "gravity", "pulsar", "eclipse",
-    "horizon", "zenith", "twilight", "aurora", "rainbow", "sunbeam", "moonlight", "thunder", "cyclone", "whirlwind",
-    "tornado", "hurricane", "storm", "mist", "cloudburst", "tidalwave", "tsunami", "geyser", "volcano", "landslide",
-    "prairie", "desert", "fjord", "cavern", "savanna", "tundra", "meadow", "rainforest", "blizzard", "sandstorm",
-    "sunset", "sunrise", "cloudburst", "equator", "hemisphere", "stratosphere", "tropics", "cumulus", "monsoon", "permafrost",
-    "lunar", "solar", "stellar", "satellite", "pulsar", "telescope", "subterranean", "crater", "plasma", "milkyway",
-    "equinox", "aerosol", "greenhouse", "earthquake", "volcanic", "constellation", "hydrology", "gravitation", "biome", "bioluminescence",
-    "hydroponics", "crystal", "neutron star", "zodiac", "meteorite", "reflection", "blackout", "satellite", "nebulae", "stardust",
-
+    "asterism", "exosphere", "lithosphere", "biosphere", "cryosphere", "thermosphere", "troposphere", "stratosphere", "mesosphere", "exoplanet",
+    "supercluster", "interstellar", "quark", "dark energy", "graviton", "light-year", "event horizon", "singularity", "aurora borealis", "aurora australis",
+    "cosmology", "magnetosphere", "thermocline", "ocean trench", "continental shelf", "isthmus", "archipelago", "badlands", "delta", "glacial moraine",
+    "gorge", "tidal pool", "sinkhole", "mud volcano", "basin", "mesa", "butte", "karst", "fjord", "atoll",
+    
     // Fantasy & Mysticism
-    "whisper", "shadow", "flame", "echo", "labyrinth", "mirage", "illusion", "phantom", "paradox", "epiphany",
-    "alchemy", "riddle", "puzzle", "serendipity", "enigma", "orchestra", "symphony", "rhapsody", "resonance", "crescendo",
-    "mythos", "legend", "oracle", "prophecy", "destiny", "fate", "charm", "curse", "hex", "omen",
-    "mystique", "elixir", "mantra", "zen", "nirvana", "utopia", "transcendence", "ether", "aura", "infinity",
-    "sorcery", "witchcraft", "rune", "sigil", "talisman", "grimoire", "fae", "elf", "druid", "warlock",
-    "spellbound", "timewarp", "shapeshifter", "conjuration", "illusionist", "metamorphosis", "potion", "teleport", "spectral", "arcane",
-    "arcana", "glyph", "mysticism", "coven", "crystal ball", "demon", "phantasm", "witchcraft", "mystical", "enchanted",
-    "familiar", "visionary", "enchantment", "pantomime", "glyph", "elemental", "conjurer", "summoner", "meditation", "charm",
-    "trance", "moonlit", "meditative", "lunar", "seance", "spirit", "charmed", "timeless", "fae queen", "exorcism",
-    "necronomicon", "astral projection", "incantation", "vortex", "alchemy", "fey", "legendary", "enchanter", "necromancy", "arcane",
-
+    "sigil", "etheric", "phantasmagoria", "eldritch", "wyrm", "sorcerer", "necropolis", "levitation", "arcadia", "chimera",
+    "shade", "specter", "eidolon", "shaman", "thaumaturgy", "mana", "ragnarok", "eldritch", "golem", "doppelganger",
+    "paladin", "warlock", "summoner", "seer", "oracle", "divination", "ethereal", "eldar", "arcane", "mythic",
+    
     // Science & Technology
-    "quantum", "nebulous", "momentum", "velocity", "inertia", "thermodynamics", "spectrum", "chromatic", "prism", "resonant", "chemistry",
-    "radiation", "synthesis", "catalyst", "oscillation", "amplitude", "frequency", "sonar", "infrared", "ultraviolet", "algorithm",
-    "parity", "fractal", "molecule", "particle", "neutron", "proton", "electron", "nucleus", "fusion", "fission",
-    "telescope", "microscope", "cybernetic", "artificial", "hologram", "laser", "biomechanics", "metronome", "automation", "singularity",
-    "circuit", "data", "encryption", "nanobot", "processor", "synthetic", "biotechnology", "interface", "quantum computing", "dark matter",
-    "exoplanet", "superconductor", "genome", "aerodynamics", "anomaly", "neural", "bioluminescence", "holography", "macrocosm", "microchip",
-    "exabyte", "dataverse", "robotics", "autonomous", "cognitive", "hacker", "quantum computer", "vortex", "artificial intelligence", "techno", "computer",
-    "circuitry", "biometric", "geodesic", "cloud storage", "5G", "connectivity", "applied physics", "supercomputer", "cryptography", "nanotech",
-
+    "hyperloop", "cybernetics", "antimatter", "exabyte", "qubit", "bioinformatics", "gene editing", "synthetic biology", "bionics", "fusion reactor",
+    "blockchain", "nanomaterial", "quantum entanglement", "holographic", "autonomous vehicle", "singularity theory", "deep learning", "augmented reality", "neural network", "optogenetics",
+    "supercomputer", "biomechanics", "haptic", "drone", "machine learning", "metaverse", "cryonics", "exoskeleton", "aerodynamics", "transhumanism",
+    
     // Colors & Light
-    "crimson", "scarlet", "vermillion", "indigo", "sapphire", "emerald", "jade", "amber", "topaz", "turquoise",
-    "obsidian", "onyx", "pearl", "opal", "garnet", "amethyst", "citrine", "coral", "bronze", "azure",
-    "chartreuse", "cerulean", "periwinkle", "lavender", "vermilion", "heliotrope", "alabaster", "ebony", "silvery", "gilded",
-    "prismatic", "moonlit", "iridescent", "luminescent", "incandescent", "phosphorescent", "opaline", "eclipsed", "glowing", "shimmering",
-    "neon", "pastel", "sepia", "gradient", "monochrome", "holographic", "translucent", "opaque", "fluorescent", "radiant",
-    "diffuse", "frosted", "vibrant", "metallic", "celestial", "reflected", "stained", "transparent", "dazzling", "blinding",
-    "glistening", "colorburst", "pearlescent", "glimmer", "sparkling", "transcendent", "vivid", "luminous", "bright", "flickering"
+    "ultramarine", "cinnabar", "gamboge", "malachite", "coquelicot", "perse", "feldgrau", "glaucous", "smalt", "tyrian purple",
+    "amaranth", "bistre", "vermilion", "harlequin", "sanguine", "tawny", "viridian", "wisteria", "xanadu", "zinnwaldite",
+    "heliotrope", "carmine", "umber", "sepia", "coral pink", "cadmium yellow", "saffron", "sapphire", "aubergine", "charcoal",
 ];
 
 // Export the words array (only needed if using ES6 modules)
