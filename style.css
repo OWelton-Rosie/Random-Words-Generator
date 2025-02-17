@@ -56,11 +56,19 @@ button:focus-visible, select:focus-visible, input:focus-visible {
     margin: 20px auto;
 }
 
+/* Output Container - Flexbox for Copy Button Alignment */
+.output-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Spacing between input field and button */
+    margin-top: 20px;
+}
+
 /* Output Field */
 #output-field {
     width: 70%;
     padding: 10px;
-    margin-top: 20px;
     font-size: 1.2em;
     background-color: #fff;
     border: 2px solid #ccc;
@@ -68,8 +76,7 @@ button:focus-visible, select:focus-visible, input:focus-visible {
     color: #333;
     text-align: center;
     transition: border-color 0.3s ease;
-    display: block;
-    margin: 20px auto; /* Centers the field */
+    flex: 1; /* Allows field to take available space */
 }
 
 #output-field:focus {
@@ -77,11 +84,11 @@ button:focus-visible, select:focus-visible, input:focus-visible {
     border-color: #3498db;
 }
 
-/* Copy Button */
+/* Copy Button - Same Line as Output Field */
 #copy-btn {
     background-color: #2ecc71;
-    margin-left: 10px;
     padding: 10px 20px;
+    flex-shrink: 0; /* Prevents button from resizing */
 }
 
 #copy-btn:hover {
@@ -99,7 +106,6 @@ button:focus-visible, select:focus-visible, input:focus-visible {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 20px;
-    margin-left: 10px;
 }
 
 #download-btn:hover {
