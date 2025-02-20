@@ -12,7 +12,7 @@ git clone https://github.com/OWelton-Rosie/random-words-generator
 ```
 
 ## Project Structure
-The project is made up of 2 parts: the client (index.html), and the server, where all the functional stuff (CSS, JS) is stored. 
+The project is made up of 2 parts: the client (index.html), and the server, where all the CSS and JS is stored. 
 <pre>
 <b>Random Words Generator</b>
 
