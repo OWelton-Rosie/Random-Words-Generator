@@ -3,7 +3,11 @@ const assets = [
     '/',
     '/index.html',
     '/style.css',
-    '/full.js',
+    '/clipboard.js',
+    '/download.js',
+    '/ui.js',
+    '/word-generation.js',
+    'words.js',
 ];
 
 // Install event - caching assets
