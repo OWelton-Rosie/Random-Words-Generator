@@ -1,33 +1,33 @@
-const cacheName = 'cumulative-time-limit-cache-v1';
-const assets = [
+const CACHE_NAME = 'random-words-generator-v1';
+const urlsToCache = [
     '/',
     '/index.html',
     '/style.css',
-    '/clipboard.js',
-    '/download.js',
-    '/ui.js',
-    '/word-generation.js',
-    'words.js',
+    '/js/words.js',
+    '/js/word-generation.js',
+    '/js/ui.js',
+    '/js/clipboard.js',
+    '/js/download.js',
+
 ];
 
-// Install event - caching assets
 self.addEventListener('install', (event) => {
     event.waitUntil(
-        caches.open(cacheName).then((cache) => {
-            return cache.addAll(assets);
-        })
+        caches.open(CACHE_NAME)
+            .then((cache) => {
+                return cache.addAll(urlsToCache);
+            })
     );
 });
 
-// Activate event - cleaning up old caches
 self.addEventListener('activate', (event) => {
-    const cacheWhitelist = [cacheName];
+    const cacheWhitelist = [CACHE_NAME];
     event.waitUntil(
         caches.keys().then((cacheNames) => {
             return Promise.all(
-                cacheNames.map((cache) => {
-                    if (!cacheWhitelist.includes(cache)) {
-                        return caches.delete(cache);
+                cacheNames.map((cacheName) => {
+                    if (!cacheWhitelist.includes(cacheName)) {
+                        return caches.delete(cacheName);
                     }
                 })
             );
@@ -35,14 +35,11 @@ self.addEventListener('activate', (event) => {
     );
 });
 
-// Fetch event - serving assets from cache when offline
 self.addEventListener('fetch', (event) => {
     event.respondWith(
         caches.match(event.request).then((cachedResponse) => {
-            if (cachedResponse) {
-                return cachedResponse;
-            }
-            return fetch(event.request);
+            // Return cached response if available, else fetch from network
+            return cachedResponse || fetch(event.request);
         })
     );
 });
