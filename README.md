@@ -11,16 +11,4 @@ To clone this repo, you'll need to go into your terminal and enter the following
 git clone https://github.com/OWelton-Rosie/random-words-generator
 ```
 
-## Project Structure
-The project is made up of 2 parts: the client (index.html), and the server, where all the CSS and JS is stored. 
-<pre>
-<b>Random Words Generator</b>
 
-<b>Server side:</b>
-└── style.css <b>Project CSS file</b>
-├── js <b>Project JavaScript files</b>
-  
-<b>Client side:</b>
-└── index.html <b>Project home page</b>
-
-</pre>
