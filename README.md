@@ -14,7 +14,7 @@ If you want to see a word added, make a Pull Request or lodge an Issue and I'll 
 ## Running the project locally
 Run the command:
 ```
-git clone https://github.com/OWelton-Rosie/wca-profile-link-shortener
+git clone https://github.com/OWelton-Rosie/Random-Words-Generator
 ```
 
 This project has no dependencies.
