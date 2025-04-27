@@ -11,11 +11,13 @@ This is the repo for <a href="https://random-words-generator.pages.dev/">https:/
 If you want to see a word added, make a Pull Request or lodge an Issue and I'll review it ASAP and (if I agree with it!) implement it.
 
 # Development
-In your terminal, enter the following command:
+## Running the project locally
+Run the command:
 ```
-git clone https://github.com/OWelton-Rosie/Cumulative-calculator
+git clone https://github.com/OWelton-Rosie/wca-profile-link-shortener
 ```
-This project has no dependencies. 
+
+This project has no dependencies.
 
 
 
