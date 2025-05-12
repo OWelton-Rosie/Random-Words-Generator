@@ -19,7 +19,7 @@ git clone https://github.com/OWelton-Rosie/Random-Words-Generator
 
 This project has no dependencies.
 
-## Todo
+# Todo
 - Add TSV functionality
 - Add light/dark mode slider
 
