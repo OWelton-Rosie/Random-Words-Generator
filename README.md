@@ -8,7 +8,7 @@ This is the repo for <a href="https://random-words-generator.pages.dev/">https:/
 - Various other small-but-nice features.
   
 ## Adding words
-If you want to see a word added, make a <a href="https://github.com/OWelton-Rosie/Random-Words-Generator/pulls">Pull Request</a> or lodge an <"https://github.com/OWelton-Rosie/Random-Words-Generator/issues">Issue</a> and I'll review it ASAP and (if I agree with it!) implement it.
+If you want to see a word added, make a <a href="https://github.com/OWelton-Rosie/Random-Words-Generator/pulls">Pull Request</a> or lodge an <a href="https://github.com/OWelton-Rosie/Random-Words-Generator/issues">Issue</a> and I'll review it ASAP and (if I agree with it!) implement it.
 
 # Development
 ## Running the project locally
