@@ -4,7 +4,7 @@ This is the repo for <a href="https://random-words-generator.pages.dev/">https:/
 ## Features
 - Ability to select a custom number of words to generate.
 - Wide range of words across multiple categories.
-- Option to download output in a variety of formats.
+- Option to download output in a variety of formats (`.txt`, `.csv`, `.tsv`, `.json`).
 - Various other small-but-nice features.
   
 ## Adding words
