@@ -1,21 +1,37 @@
-// Clipboard Copy functionality
-function copyToClipboard() {
-    const outputField = document.getElementById('output-field');
-    
-    // Check if there is any text in the output field
-    if (outputField && outputField.value.trim() !== "") {
-        // Select the text inside the output field
-        outputField.select();
-        outputField.setSelectionRange(0, 99999); // For mobile devices, this ensures the text is selected
+document.getElementById('copy-button').addEventListener('click', function () {
+    copyToClipboard(this);
+});
 
-        // Attempt to copy the selected text to clipboard
+function copyToClipboard(buttonElement) {
+    const outputField = document.getElementById('output-field');
+
+    if (outputField && outputField.value.trim() !== "") {
+        outputField.select();
+        outputField.setSelectionRange(0, 99999); // For mobile
+
         try {
-            document.execCommand('copy');  // Copies the selected text to clipboard
-            alert("Copied to clipboard!");
+            document.execCommand('copy');
+            // Feedback to user
+            const originalText = buttonElement.textContent;
+            buttonElement.textContent = "Copied to clipboard!";
+            buttonElement.disabled = true;
+
+            setTimeout(() => {
+                buttonElement.textContent = originalText;
+                buttonElement.disabled = false;
+            }, 2000);
         } catch (err) {
             console.error('Failed to copy text: ', err);
         }
     } else {
-        alert("Nothing to copy!");
+        // Empty field feedback
+        const originalText = buttonElement.textContent;
+        buttonElement.textContent = "Nothing to copy!";
+        buttonElement.disabled = true;
+
+        setTimeout(() => {
+            buttonElement.textContent = originalText;
+            buttonElement.disabled = false;
+        }, 2000);
     }
 }
